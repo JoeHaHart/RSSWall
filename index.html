@@ -1,0 +1,156 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./css/theme.css">
+  <link rel="stylesheet" type="text/css" href="./css/animate.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="row">
+		<div class="col-md-4">
+      <div id="grid1" class="widget">
+      </div>
+		</div>
+    <div class="col-md-4">
+      <div id="grid2" class="widget">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div id="grid3" class="widget" >
+      </div>
+    </div>
+	</div>
+    <div class="row">
+    <div class="col-md-4">
+      <div id="grid4" class="widget">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div id="grid5" class="widget">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div id="grid6" class="widget">
+      </div>
+    </div>
+  </div>
+    <div class="row">
+    <div class="col-md-4">
+      <div id="grid7" class="widget">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div id="grid8" class="widget">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div id="grid9" class="widget">
+      </div>
+    </div>
+  </div>
+
+	</div>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+  <script src="js/randomColor.js"></script>
+   <script src="js/jquery.qrcode-0.7.0.js"></script>
+   <script src="js/jquery.urlshortener.js"></script>
+
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script src="https://www.google.com/uds/?file=feeds&amp;v=1" type="text/javascript"></script>
+<script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js" type="text/javascript"></script>
+  <script src="js/wall.js"></script>
+    <script>
+  $(document).ready(app());
+  </script>
+<script type="text/javascript">
+/*
+	var rss = ["http://feeds.bbci.co.uk/news/rss.xml","http://www.theguardian.com/world/rss","http://mf.feeds.reuters.com/reuters/UKTopNews"];
+	var titles = ["BBC News","The Guardian", "Reuters"];
+	var currentNews = 1;
+	
+var control = new google.feeds.FeedControl();
+/*
+	function feed(param){
+    google.load("feeds", "1");
+
+    function initialize() {
+    	
+      var feed = new google.feeds.Feed(param);
+
+      feed.load(function(result) {
+        if (!result.error) {
+          var container = document.getElementById("blogs");
+          for (var i = 0; i < result.feed.entries.length; i++) {
+            var entry = result.feed.entries[i];
+            var div = document.createElement("div");
+            var div2 = document.createElement("div");
+            div2.className = "media-body";
+            div.className = "media";
+            var h = document.createElement("h4");
+            h.className = "media-heading";
+            var a = document.createElement("p");
+            var s = document.createElement("small");
+            var p = document.createElement("p");
+            var link = document.createElement("a");
+            var image = document.createElement("img");
+            image.className = "media-object";
+            var video ='cock';
+           
+
+            link.setAttribute('href', entry.link);
+            link.appendChild(document.createTextNode(entry.title));
+            h.appendChild(link);
+            s.appendChild(document.createTextNode(entry.author));
+            a.appendChild(s);
+            p.appendChild(document.createTextNode(entry.contentSnippet));
+            //p.appendChild(document.createTextNode(data));
+            div2.appendChild(h);
+            div2.appendChild(a);
+            div2.appendChild(p);
+            div2.appendChild(image);
+            div.appendChild(div2);
+            container.appendChild(div);
+          }
+        }
+      });
+    }
+    google.setOnLoadCallback(initialize);
+};
+*/
+
+	/*
+	function setNextNewsA(){
+    $("#blogs").fadeOut(2000,setNextNewsB);
+}
+
+function setNextNewsB(){
+		  // Create a feed control
+
+  var feedControl = new google.feeds.FeedControl();
+
+  // Add two feeds.
+  feedControl.addFeed(rss[currentNews], titles[currentNews]);
+
+  // Draw it.
+  feedControl.draw(document.getElementById("blogs"));
+
+
+    $("#blogs").fadeIn(2000);
+
+		if(currentNews<2){
+			currentNews++;
+		} else{
+			currentNews=0;
+		}
+	}
+
+	setNextNewsB();
+	setInterval(setNextNewsA,30000);
+  */
+    </script>
+    </body>
+
+</html>
